@@ -1,7 +1,7 @@
-package Controller;
+package com.example.hibernate_hw1.Controller;
 
-import com.example.hibernate_hw1.Entity.Persons;
-import com.example.hibernate_hw1.Repository.DataRepository;
+import com.example.hibernate_hw1.entity.Persons;
+import com.example.hibernate_hw1.repository.DataRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,6 +18,7 @@ public class Controller {
 
     @GetMapping("/persons/by-city")
     public List<Persons> getProductName (@RequestParam("city") String city){
+        dataRepository.enterPerson();
         return dataRepository.getPersonsByCity(city);
     }
 
