@@ -1,4 +1,4 @@
-package com.example.hibernate_hw1.Controller;
+package com.example.hibernate_hw1.controller;
 
 import com.example.hibernate_hw1.entity.Persons;
 import com.example.hibernate_hw1.repository.DataRepository;
